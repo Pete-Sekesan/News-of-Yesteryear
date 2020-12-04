@@ -8,6 +8,7 @@ const quoteURL = 'https://qvoca-bestquotes-v1.p.rapidapi.com/quote/?genre=histor
 //Declare a variable for Quote API Key
 const apiKey = 'eedb904fd7mshdbabd39c1ef8444p1e448cjsn4120f5877999'
 //Let Submit button append text and max result LOC API URL
+
 //Format the query results for use in search URL
 function formatQueryParams(params){
     const queryItems = Object.keys(params)
@@ -15,7 +16,31 @@ function formatQueryParams(params){
     return queryItems.join('&');
 }
 
-//Send user created LOC URL to API 
+//Get the news articles
+function getNews(searchTerm, maxResults=5){
+    const params = {
+        q: searchTerm,
+        c: maxResults
+    }
+};
+const queryString = formatQueryParams(params);
+url = searchURL + '?' + queryString + '&fo=json';
+console.log(url)
+
+fetch(url)
+.then(response =>{
+    if (response.ok){
+        return response.json();
+    }
+    throw new Error(response.statusText);
+})
+.then(responseJson => console.log(responseJson))
+.catch(error => {
+    $('error-message').text(`Oops! Something went wrong: ${error.message}`);
+
+});
+
+
 
 //Send API Result Images to <ul>
 
