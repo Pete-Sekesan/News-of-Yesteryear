@@ -17,10 +17,10 @@ function formatQueryParams(params){
 }
 
 //Get the news articles
-function getNews(searchTerm, maxResults=5){
+function getNews(topic, limit=5){
     const params = {
-        q: searchTerm,
-        c: maxResults
+        q: topic,
+        c: limit
     }
 };
 const queryString = formatQueryParams(params);
@@ -42,11 +42,23 @@ fetch(url)
 
 
 
-//Send API Result Images to <ul>
-
-//Link results image to LOC 
+//Display the results into the <ul>
+    //Link results image to LOC 
 
 //Upon new search submission, clear previous results 
 
+
 //On page load, generate QOD 
 //On submit click, generate new QOD onto results page 
+
+//create a watchForm to tie in above functions and variables
+function watchForm(){
+    $('form').submit( event => {
+        event.preventDefault();
+        const topic = $('#topic-search').val();
+        const limit = $('#max-results').val();
+        getNews(topic, limit);
+    }
+    );
+}
+$(watchForm)
