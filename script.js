@@ -12,7 +12,7 @@ const apiKey = 'eedb904fd7mshdbabd39c1ef8444p1e448cjsn4120f5877999'
 //Format the query results for use in search URL
 function formatQueryParams(params){
     const queryItems = Object.keys(params)
-    .map(key => `${encodeURIComponent(key)} = ${encodeURIComponent(params[key])}`)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
     return queryItems.join('&');
 }
 
