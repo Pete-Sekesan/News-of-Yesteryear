@@ -48,16 +48,39 @@ fetch(url)
 //Upon new search submission, clear previous results 
 
 
-//On page load, generate QOD 
+//Get History QOD
+function getQuote(){
+fetch("https://qvoca-bestquotes-v1.p.rapidapi.com/quote?message=fire", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "eedb904fd7mshdbabd39c1ef8444p1e448cjsn4120f5877999",
+		"x-rapidapi-host": "qvoca-bestquotes-v1.p.rapidapi.com"
+	}
+})
+.then(response =>{
+    if (response.ok){
+        return response.json();
+    }
+    throw new Error(response.statusText);
+})
+.then(responseJson => console.log(responseJson))
+.catch(error => {
+    $('error-message').text(`Oops! Something went wrong: ${error.message}`);
+
+});
+}
+
 //On submit click, generate new QOD onto results page 
 
 //create a watchForm to tie in above functions and variables
 function watchForm(){
+    getQuote();
     $('form').submit( event => {
         event.preventDefault();
         const topic = $('#topic-search').val();
         const limit = $('#max-results').val();
         getNews(topic, limit);
+        getQuote();
     }
     );
 }
