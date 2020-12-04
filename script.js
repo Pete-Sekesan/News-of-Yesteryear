@@ -21,10 +21,10 @@ function getNews(topic, limit=5){
     const params = {
         q: topic,
         c: limit
-    }
-};
+    };
+
 const queryString = formatQueryParams(params);
-url = searchURL + '?' + queryString + '&fo=json';
+const url = searchURL + '?' + queryString + '&fo=json';
 console.log(url)
 
 fetch(url)
@@ -39,7 +39,7 @@ fetch(url)
     $('error-message').text(`Oops! Something went wrong: ${error.message}`);
 
 });
-
+}
 
 
 //Display the results into the <ul>
