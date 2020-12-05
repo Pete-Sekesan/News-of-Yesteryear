@@ -43,6 +43,25 @@ fetch(url)
 
 
 //Display the results into the <ul>
+function displayResults(responseJson){
+    console.log('display function ran')
+    //clear previous results
+    $('#results-list').empty();
+    console.log('results emptied')
+    //create a loop to iterate over results
+    for (let i = 0; i < responseJson.results.length; i++){
+        $('#results-list').append(
+            `<li>
+                <h2> ${responseJson.results[i].partof_title} </h2>
+                <h3> ${responseJson.results[i].description} </h3>
+
+            `
+        )
+        console.log('results appended');
+
+    }
+    $('#results').removeClass('hidden')
+}
     //Link results image to LOC 
 
 //Upon new search submission, clear previous results 
