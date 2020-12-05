@@ -34,7 +34,7 @@ fetch(url)
     }
     throw new Error(response.statusText);
 })
-.then(responseJson => console.log(responseJson))
+.then(responseJson => displayResults(responseJson))
 .catch(error => {
     $('error-message').text(`Oops! Something went wrong: ${error.message}`);
 
@@ -50,11 +50,14 @@ function displayResults(responseJson){
     console.log('results emptied')
     //create a loop to iterate over results
     for (let i = 0; i < responseJson.results.length; i++){
+        let title = responseJson.results[i].partof_title;
+        let description = responseJson.results[i].description;
+        let image = responseJson.results[i].image_url[1];
+        let url = responseJson.results[i].id;
         $('#results-list').append(
-            `<li>
-                <h2> ${responseJson.results[i].partof_title} </h2>
-                <h3> ${responseJson.results[i].description} </h3>
-
+            `<li><h2> Newspaper Source: ${title}</h2></li>
+            <li><a href="${url}" target="_blank"><img src="${image}" alt="Digitally Scanned Newspaper"></a></li>
+            <li><h3> Description: ${description} </h3></li>
             `
         )
         console.log('results appended');
@@ -93,7 +96,6 @@ fetch("https://qvoca-bestquotes-v1.p.rapidapi.com/quote?message=fire", {
 
 //create a watchForm to tie in above functions and variables
 function watchForm(){
-    getQuote();
     $('form').submit( event => {
         event.preventDefault();
         const topic = $('#topic-search').val();
