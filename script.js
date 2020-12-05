@@ -79,23 +79,14 @@ fetch("https://qvoca-bestquotes-v1.p.rapidapi.com/quote?message=fire", {
 		"x-rapidapi-host": "qvoca-bestquotes-v1.p.rapidapi.com"
 	}
 })
-.then(response =>{
-    if (response.ok){
-        return response.json();
-    }
-    throw new Error(response.statusText);
-})
-.then(responseJson => console.log(responseJson))
-.catch(error => {
-    $('error-message').text(`Oops! Something went wrong: ${error.message}`);
-
-});
 }
 
-//On submit click, generate new QOD onto results page 
+//display historical quote on page load and on each submit click
+
 
 //create a watchForm to tie in above functions and variables
 function watchForm(){
+    getQuote();
     $('form').submit( event => {
         event.preventDefault();
         const topic = $('#topic-search').val();
