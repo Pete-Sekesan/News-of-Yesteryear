@@ -53,7 +53,7 @@ function displayResults(responseJson){
         $('#results-list').append(
             `<li><h2> Newspaper Source: ${title}</h2>
             <a href="${url}" target="_blank"><img src="${image}" alt="Digitally Scanned Newspaper"></a>
-            <p> ${date} </p>
+            <p> Date Published: ${date} </p>
             <p> To follow up with more details <a href="${url}" target="_blank">More Information</a> </p>
             </li>`
             )
@@ -94,7 +94,6 @@ function displayQuote(responseQuoteJson){
 
 //create a watchForm to tie in above functions and variables
 function watchForm(){
-    getQuote();
     $('form').submit( event => {
         event.preventDefault();
         const topic = $('#topic-search').val();
