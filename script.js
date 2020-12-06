@@ -52,9 +52,9 @@ function displayResults(responseJson){
         let date = responseJson.results[i].date;
         $('#results-list').append(
             `<li><h2> Newspaper Source: ${title}</h2>
-            <a href="${url}" target="_blank"><img src="${image}" alt="Digitally Scanned Newspaper"></a>
             <p> Date Published: ${date} </p>
-            <p> To follow up with more details <a href="${url}" target="_blank">More Information</a> </p>
+            <a href="${url}" target="_blank"><img src="${image}" alt="Digitally Scanned Newspaper"></a>
+            <p> To follow up with more details <a href="${url}" target="_blank">More Information</a></p>
             </li>`
             )
             console.log('results appended');
