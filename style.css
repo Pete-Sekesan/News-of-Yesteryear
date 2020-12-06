@@ -17,3 +17,22 @@ input[type=number]::-webkit-outer-spin-button {
 .hidden {
     display: none;
 }
+
+/* Mobile first responsive design */
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  @media all and (min-width: 800px) {
+
+    section, h1 {
+      padding: 0 10%;
+    }
+  
+    .group {
+      flex-direction: row;
+    }
+  
+  }

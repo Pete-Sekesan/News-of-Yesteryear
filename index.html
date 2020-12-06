@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>App Name TBD</title>
+        <title>News of Yesteryear</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
@@ -12,11 +12,15 @@
     </head>
     <body>
         <header>
-            <h1> **Title a work in progress**</h1>
+            <h1> News of Yesteryear</h1>
         </header>
        <main>
            <p>
-               Instructions on how to use the app will go in this section.
+               Welcome to the News of Yesteryear App! It is here that you can enter any search terms you would like, coupled with the amount of results you would like back and you will receive some amazingly digitized images of newspapers and articles dating from 1963 all the way back to 1789! From there you can click on the image to be taken to the Library of Congress's archive to take a deeper dive if the article does so intrigue you. 
+            </p>
+               
+            <p>
+                History is an incredibly important part of who we are, and being able to access documents from our past keeps us grounded, with the hopes of learning from it.  As you browse through the countless digitized scans, you will be greeted with a new historical quote with each search. I hope these inspire you, or at the very least enlighten you. 
            </p>
            <div class="container">
                <form id="topic-search-form">
@@ -29,6 +33,9 @@
                    <input type="submit" value="Submit">
 
                    <p id='error-message' class='error-message'></p>
+                   <section id="history-quote">
+                       
+                   </section>
 
                    <section id='results' class="hidden">
                        <h2> Search Results</h2>
@@ -38,8 +45,6 @@
                     </section>
                 </form>
                 
-                <section id="history-quote">
-                </section>
             </div>
     
        </main>

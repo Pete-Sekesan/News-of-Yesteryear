@@ -1,3 +1,9 @@
+Welcome 
+
+
+
+
+
 Requirements
 The API hack capstone is largely open-ended. You'll choose at least 1, but preferably multiple APIs to work with and come up with an app that does something interesting with the data from those APIs. Ultimately, the user experience is up to you. The high-level requirements for your app are as follows:
 
@@ -8,3 +14,4 @@ Responsive: The final version of your app should work on both mobile and desktop
 Refer back to your responsiveness checklist for help.
 Accessibility: The final version of your app must follow a11y best practices.
 Take a moment to review the full rubric that your capstone will be scored on. You should refer back to this rubric as you plan and build your project. Before submitting your project for a formal code review, you should go through this rubric with your mentor to ensure you've met all the requirements.
+

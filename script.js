@@ -47,15 +47,15 @@ function displayResults(responseJson){
     //create a loop to iterate over results
     for (let i = 0; i < responseJson.results.length; i++){
         let title = responseJson.results[i].partof_title;
-        let description = responseJson.results[i].description;
         let image = responseJson.results[i].image_url[1];
         let url = responseJson.results[i].id;
         let date = responseJson.results[i].date;
         $('#results-list').append(
             `<li><h2> Newspaper Source: ${title}</h2>
             <a href="${url}" target="_blank"><img src="${image}" alt="Digitally Scanned Newspaper"></a>
-            <p> ${date}
-            <p> Description: ${description} </p></li>`
+            <p> ${date} </p>
+            <p> To follow up with more details <a href="${url}" target="_blank">More Information</a> </p>
+            </li>`
             )
             console.log('results appended');
         }
@@ -66,7 +66,7 @@ function displayResults(responseJson){
 
 //Get History QOD
 function getQuote(){
-fetch("https://qvoca-bestquotes-v1.p.rapidapi.com/quote?message=fire", {
+fetch("https://qvoca-bestquotes-v1.p.rapidapi.com/quote?genre=history", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-key": "eedb904fd7mshdbabd39c1ef8444p1e448cjsn4120f5877999",
@@ -89,7 +89,7 @@ fetch("https://qvoca-bestquotes-v1.p.rapidapi.com/quote?message=fire", {
 function displayQuote(responseQuoteJson){
     $('#history-quote').empty();
     $('#history-quote').append(
-        `<p> ${responseQuoteJson.message} </p>`);
+        `<h3> "${responseQuoteJson.message}" - ${responseQuoteJson.author} </h3>`);
 }
 
 //create a watchForm to tie in above functions and variables
