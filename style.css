@@ -36,3 +36,49 @@ input[type=number]::-webkit-outer-spin-button {
     }
   
   }
+  
+ body {
+     background-image: url("images/printing-press-box.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     color: black;
+    
+ }
+
+header {
+    color: white;
+    font-size: 30px;
+    font-family: 'chomskyregular';
+    font-weight: bold;
+}
+
+#history-quote {
+    background-color: rgb(167, 153, 153);
+    
+
+}
+.wrapper {
+    position: relative;
+    background-color: rgba(243, 242, 242, 0.88);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#results{
+    color: black;
+}
+
+.wrapper-results {
+    position: relative;
+    background-color: rgba(173, 85, 85, 0.88);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}

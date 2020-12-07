@@ -51,7 +51,7 @@ function displayResults(responseJson){
         let url = responseJson.results[i].id;
         let date = responseJson.results[i].date;
         $('#results-list').append(
-            `<li><h2> Newspaper Source: ${title}</h2>
+            `<li class="wrapper-results"><h2> Newspaper Source: ${title}</h2>
             <p> Date Published: ${date} </p>
             <a href="${url}" target="_blank"><img src="${image}" alt="Digitally Scanned Newspaper"></a>
             <p> To follow up with more details <a href="${url}" target="_blank">More Information</a></p>
