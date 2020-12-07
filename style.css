@@ -52,8 +52,8 @@ header {
 
 #history-quote {
     background-color: #b7b7a4;
-    opacity: 0.88;
-    font-family: 'beautiful_people_personal_uRg';
+    opacity: 0.9;
+    font-family: 'beautiful_people_personal_uRg', 'Times', 'serif';
     
 
 }
@@ -74,14 +74,14 @@ header {
 
 .wrapper-results {
     position: relative;
-    background-color: #b7b7a4;
-    opacity: .88;
+    background-color:rgba(183, 183, 164, 0.9);
     z-index: 1;
     padding: 10px;
     border-radius: 10px;
     max-width: 90%;
     margin: 0 auto;
     margin-top: 20px;
+    list-style: none
 }
 
 img {
