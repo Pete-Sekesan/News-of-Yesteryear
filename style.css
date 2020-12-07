@@ -1,6 +1,4 @@
-header{
-    text-align: center;
-}
+
 
 main {
     text-align: center;
@@ -25,7 +23,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 100px;
   }
 
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 600px) {
 
     section, h1 {
       padding: 0 10%;
@@ -48,12 +46,14 @@ input[type=number]::-webkit-outer-spin-button {
 header {
     color: white;
     font-size: 30px;
-    font-family: 'chomskyregular';
-    font-weight: bold;
+    font-family: 'chomskyregular', Times, serif;
+    text-align: center;
 }
 
 #history-quote {
-    background-color: rgb(167, 153, 153);
+    background-color: #b7b7a4;
+    opacity: 0.88;
+    font-family: 'beautiful_people_personal_uRg';
     
 
 }
@@ -74,7 +74,8 @@ header {
 
 .wrapper-results {
     position: relative;
-    background-color: rgba(173, 85, 85, 0.88);
+    background-color: #b7b7a4;
+    opacity: .88;
     z-index: 1;
     padding: 10px;
     border-radius: 10px;
@@ -82,3 +83,73 @@ header {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* Font Adjustments */
+#welcome p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.btn {
+    
+    margin-top: 10px;
+    background-color: #f0efeb;
+    border-radius: 8px;
+}
+ 
+a {
+    font-size: 16px;
+    font-family: "Verdana", "sans-serif";
+    text-decoration: none;
+}
+
+a:link {
+    color: #f0efeb;
+}
+
+a:visited {
+    color: #4F5D75;
+}
+
+a:hover {
+    color: #2D3142;
+}
+
+a:active {
+    color: #a5a58d;
+}
+
+
+/*Fonts*/
+@font-face {
+    font-family: 'beautiful_people_personal_uRg';
+    src: url('fonts/beautifulpeoplepersonaluse-de0g-webfont.woff2') format('woff2'),
+         url('fonts/beautifulpeoplepersonaluse-de0g-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'chomskyregular';
+    src: url('fonts/chomsky-webfont.woff2') format('woff2'),
+         url('fonts/chomsky-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.footer {
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #cb997e;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
