@@ -41,6 +41,7 @@ input[type=number]::-webkit-outer-spin-button {
      background-repeat: no-repeat;
      background-attachment: fixed;
      color: black;
+     
     
  }
 
@@ -54,7 +55,7 @@ header {
 #history-quote {
     background-color: #b7b7a4;
     opacity: 0.9;
-    font-family: 'beautiful_people_personal_uRg', 'Times', 'serif';
+    font-family: Times, serif
     
 
 }
@@ -80,10 +81,11 @@ header {
     padding: 10px;
     border-radius: 10px;
     max-width: 90%;
-    margin: 0 auto;
     margin-top: 20px;
     list-style: none;
     text-align: center;
+    align-items: center;
+
 }
 
 img {
@@ -149,8 +151,7 @@ a:active {
 
 
 .footer {
-    
-    left: 0;
+     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #cb997e;
@@ -159,3 +160,5 @@ a:active {
     margin-top: 50px;
     
   }
+
+  
