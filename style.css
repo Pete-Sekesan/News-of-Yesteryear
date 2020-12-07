@@ -95,6 +95,10 @@ img {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif
 }
+.search-results{
+    font-size: 40px;
+    color: white;
+}
 
 .btn {
     
