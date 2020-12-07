@@ -38,7 +38,7 @@ input[type=number]::-webkit-outer-spin-button {
   
  body {
      background-image: url("images/printing-press-box.jpg");
-     background-repeat: repeat;
+     background-repeat: no-repeat;
      background-attachment: fixed;
      color: black;
     
