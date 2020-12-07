@@ -1,4 +1,9 @@
 
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 
 main {
     text-align: center;
@@ -80,7 +85,7 @@ header {
     z-index: 1;
     padding: 10px;
     border-radius: 10px;
-    max-width: 90%;
+    max-width: 100%;
     margin-top: 20px;
     list-style: none;
     text-align: center;
@@ -158,6 +163,7 @@ a:active {
     color: white;
     text-align: center;
     margin-top: 50px;
+    position: relative;
     
   }
 
