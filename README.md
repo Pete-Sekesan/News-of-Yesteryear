@@ -1,4 +1,4 @@
- #News of Yesteryear App
+ # News of Yesteryear App
 Live Link : https://pete-sekesan.github.io/News-of-Yesteryear/
 
 Back when I was in middle school, I loved going to the library and asking for various years of microfilm (am I dating myself here?) to put into the machine and just scroll though countless newspapers. I thought it was so cool to be able to look back and see news and headlines from major world events to just normal days, like maybe the day I was born. 
@@ -13,10 +13,10 @@ I've also included a History Quote Generator that displays an historical quote o
 Use this app for fun and to kill some time or for use on a research paper or article you are writing. Find a quote you like that us generated and use it in your next trivia night. 
 
 The technology stack used in this app is as follows:
-*HTML
-*CSS
-*JavaScript
-*jQuery
+* HTML
+* CSS
+* JavaScript
+* jQuery
 
 
 
