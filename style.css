@@ -1,19 +1,18 @@
-
 * {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 main {
     text-align: center;
 }
 
 /* remove arrows from number selection */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Hide results */
@@ -27,29 +26,30 @@ input[type=number]::-webkit-outer-spin-button {
     flex-direction: column;
     margin-bottom: 100px;
     margin-right: 100px;
-  }
+}
 
-  @media all and (min-width: 600px) {
+@media all and (min-width: 600px) {
 
-    section, h1 {
-      padding: 0 10%;
+    section,
+    h1 {
+        padding: 0 10%;
     }
-  
+
     .group {
-      flex-direction: row;
+        flex-direction: row;
     }
-  
-  }
-  
- body {
-     background-image: url("images/block-blurred.jpg");
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
-     color: black;
-     
-    
- }
+
+}
+
+body {
+    background-image: url("images/block-blurred.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+
+
+}
 
 header {
     color: white;
@@ -62,9 +62,8 @@ header {
     background-color: #b7b7a4;
     opacity: 0.9;
     font-family: Times, serif
-    
-
 }
+
 .wrapper {
     position: relative;
     background-color: rgba(243, 242, 242, 0.88);
@@ -76,16 +75,17 @@ header {
     margin-top: 20px;
 }
 
-#results{
+#results {
     color: black;
 }
-#results-list{
+
+#results-list {
     padding-left: 1px;
 }
 
 .wrapper-results {
     position: relative;
-    background-color:rgba(183, 183, 164, 0.9);
+    background-color: rgba(183, 183, 164, 0.9);
     z-index: 1;
     padding: 10px;
     border-radius: 10px;
@@ -102,23 +102,25 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
+
 /* Font Adjustments */
 #welcome p {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif
 }
-.search-results{
+
+.search-results {
     font-size: 40px;
     color: white;
 }
 
 .btn {
-    
+
     margin-top: 10px;
     background-color: #f0efeb;
     border-radius: 8px;
 }
- 
+
 a {
     font-size: 16px;
     font-family: "Verdana", "sans-serif";
@@ -147,7 +149,7 @@ a:active {
 @font-face {
     font-family: 'chomskyregular';
     src: url('fonts/chomsky-webfont.woff2') format('woff2'),
-         url('fonts/chomsky-webfont.woff') format('woff');
+        url('fonts/chomsky-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -155,7 +157,7 @@ a:active {
 
 
 .footer {
-     left: 0;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #cb997e;
@@ -163,5 +165,5 @@ a:active {
     text-align: center;
     margin-top: 50px;
     position: relative;
-    
-  }
+
+}
