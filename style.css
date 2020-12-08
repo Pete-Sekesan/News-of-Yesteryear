@@ -119,6 +119,10 @@ img {
     margin-top: 10px;
     background-color: #f0efeb;
     border-radius: 8px;
+    color: black;
+    padding: .4em .4em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 a {

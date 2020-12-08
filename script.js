@@ -56,7 +56,8 @@ function displayResults(responseJson){
             </li>`
             )
         }
-        $('#results').removeClass('hidden')
+        $('#results').removeClass('hidden');
+        $('#scrollUp').removeClass('hidden');
     }
    
 
