@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>News of Yesteryear</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1> News of Yesteryear</h1>
-        </header>
-       <main>
-           <div class="wrapper" id="welcome">
-           <p>
-               Welcome to the News of Yesteryear App! It is here that you can enter any search term you would like, coupled with the amount of results you would like back and you will receive some amazingly digitized images of newspapers and articles dating from 1963 all the way back to 1789! From there you can click on the image to be taken to the Library of Congress's archive to take a deeper dive if the article does so intrigue you. 
-            </p>
-               
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>News of Yesteryear</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> News of Yesteryear</h1>
+    </header>
+    <main>
+        <div class="wrapper" id="welcome">
             <p>
-                History is an incredibly important part of who we are, and being able to access documents from our past keeps us grounded, with the hopes of learning from it.  As you browse through the countless digitized scans, you will be greeted with a new historical quote with each search. I hope these inspire you, or at the very least enlighten you. 
-           </p>
+                Welcome to the News of Yesteryear App! It is here that you can enter any search term you would like,
+                coupled with the amount of results you would like back and you will receive some amazingly digitized
+                images of newspapers and articles dating from 1963 all the way back to 1789! From there you can click on
+                the image to be taken to the Library of Congress's archive to take a deeper dive if the article does so
+                intrigue you.
+            </p>
+
+            <p>
+                History is an incredibly important part of who we are, and being able to access documents from our past
+                keeps us grounded, with the hopes of learning from it. As you browse through the countless digitized
+                scans, you will be greeted with a new historical quote with each search. I hope these inspire you, or at
+                the very least enlighten you.
+            </p>
         </div>
-           
-               <form id="topic-search-form">
-                   <div class="wrapper">
-                       <label for="topic-search">Search Topic</label>
-                       <input type="text" name="topic-search" id="topic-search" required placeholder="titanic, christmas, war etc">
-                   
-                       <label for="topic-search-max-results">Max Results</label>
-                       <input type="number" id="max-results" value="5" min="1" max="50">
 
-                       <input type="submit" value="Submit">
+        <form id="topic-search-form">
+            <div class="wrapper">
+                <label for="topic-search">Search Topic</label>
+                <input type="text" name="topic-search" id="topic-search" required
+                    placeholder="titanic, christmas, war etc">
 
-                    <p id="error-message" class="error-message"></p>
-                   </div>
-                   <section id="history-quote" class="wrapper">
-                       <h3>"A people without the knowledge of their past history, origin and culture is like a tree without roots." - Marcus Garvey
-                      </h3>
-                   </section>
+                <label for="topic-search-max-results">Max Results</label>
+                <input type="number" id="max-results" value="5" min="1" max="50">
 
-                   <section id="results" class="hidden">
-                       <h2 class="search-results">Search Results</h2>
-                       <ul id="results-list">
+                <input type="submit" value="Submit">
 
-                       </ul>
-                    </section>
-                    <button class="btn"><a href="#" class="scrollup">Back to top</a></button>
-                </form>
-                
+                <p id="error-message" class="error-message"></p>
+            </div>
+            <section id="history-quote" class="wrapper">
+                <h3>"A people without the knowledge of their past history, origin and culture is like a tree without
+                    roots." - Marcus Garvey
+                </h3>
+            </section>
+
+            <section id="results" class="hidden">
+                <h2 class="search-results">Search Results</h2>
+                <ul id="results-list">
+
+                </ul>
+            </section>
+            <button class="btn"><a href="#" class="scrollup">Back to top</a></button>
+        </form>
             
             
        </main>
