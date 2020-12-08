@@ -22,7 +22,7 @@ function getNews(topic, limit=5){
     };
     const queryString = formatQueryParams(params);
     const url = searchURL + '?' + queryString + '&fo=json';
-    console.log(url)
+    
     
     fetch(url)
     .then(response =>{
@@ -40,10 +40,8 @@ function getNews(topic, limit=5){
 
 //Display the results into the <ul>
 function displayResults(responseJson){
-    console.log('display function ran')
     //clear previous results
     $('#results-list').empty();
-    console.log('results emptied')
     //create a loop to iterate over results
     for (let i = 0; i < responseJson.results.length; i++){
         let title = responseJson.results[i].partof_title;
@@ -57,7 +55,6 @@ function displayResults(responseJson){
             <p> To follow up with more details <a href="${url}" target="_blank">More Information</a></p>
             </li>`
             )
-            console.log('results appended');
         }
         $('#results').removeClass('hidden')
     }

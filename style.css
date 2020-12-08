@@ -143,13 +143,7 @@ a:active {
 
 
 /*Fonts*/
-@font-face {
-    font-family: 'beautiful_people_personal_uRg';
-    src: url('fonts/beautifulpeoplepersonaluse-de0g-webfont.woff2') format('woff2'),
-         url('fonts/beautifulpeoplepersonaluse-de0g-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 @font-face {
     font-family: 'chomskyregular';
     src: url('fonts/chomsky-webfont.woff2') format('woff2'),
