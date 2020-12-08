@@ -5,7 +5,7 @@ const searchURL = 'https://www.loc.gov/collections/chronicling-america/';
 
 //declare a variable for Quote API URL
 const quoteURL = 'https://qvoca-bestquotes-v1.p.rapidapi.com/quote/?genre=history';
-//Declare a variable for Quote API Key
+
 
 //Format the query results for use in search URL
 function formatQueryParams(params){
@@ -22,8 +22,7 @@ function getNews(topic, limit=5){
     };
     const queryString = formatQueryParams(params);
     const url = searchURL + '?' + queryString + '&fo=json';
-    
-    
+
     fetch(url)
     .then(response =>{
         if (response.ok){
@@ -32,8 +31,12 @@ function getNews(topic, limit=5){
         throw new Error(response.statusText);
     })
     .then(responseJson => displayResults(responseJson))
+    
+   
     .catch(error => {
-        $('error-message').text(`Oops! Something went wrong: ${error.message}`);
+        $('#error-message').text(`Oops! Something went wrong: ${error.message}`);
+       
+        
     });
 }
 
