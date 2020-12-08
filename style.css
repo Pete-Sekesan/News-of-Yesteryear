@@ -78,6 +78,9 @@ header {
 #results{
     color: black;
 }
+#results-list{
+    padding-left: 1px;
+}
 
 .wrapper-results {
     position: relative;
@@ -85,7 +88,8 @@ header {
     z-index: 1;
     padding: 10px;
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
     margin-top: 20px;
     list-style: none;
     text-align: center;
@@ -166,5 +170,3 @@ a:active {
     position: relative;
     
   }
-
-  
